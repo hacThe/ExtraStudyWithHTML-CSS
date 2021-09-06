@@ -1,0 +1,51 @@
+:root{
+    --primary-color: #c82a00;
+    --secondary-color: #023462;
+    --black-color: #000;
+    --white-color: #fff;
+    --gray-color: #666;
+    --text-color: #333;
+    --plum-color: #b80257;
+    --fb-color: #4080ff;
+    --mail-color: #f47425;
+    --first-color: #1dbfaf;
+    --second-color: #1dbfaf;
+    --button-color: #1dbfaf;
+    --button-image: linear-gradient(70.06deg, #2cccff -5%, #22dfbf 106%);
+    --font-family: "Montserrat",Arial,Helvetica,sans-serif;
+    --black-background-color: #151515;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: var(--font-family);
+    box-sizing: border-box;
+    color: var(--white-color);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn-custom{
+    padding: 5px 10px;
+    min-width: 120px;
+    border-radius: 30px;
+    background-color:var(--primary-color);
+    transition: 1s;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-custom:hover{
+    cursor: pointer;
+    color: white;
+
+}

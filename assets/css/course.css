@@ -1,0 +1,24 @@
+.course__showroom-filter a{
+    color: #000;
+    text-decoration: none;
+    margin: 8px;
+    padding: 5px 12px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.course__showroom-filter a.actived{
+    color: #fff;
+    background-color: var(--primary-color);
+    transition: all 0.5s;
+}
+
+.course__showroom-filter{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 50px 0;
+    font-size: 1.1rem;
+    font-weight: 400;
+    transition: all 0.5s;
+}

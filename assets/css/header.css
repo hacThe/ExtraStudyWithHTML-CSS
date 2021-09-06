@@ -1,0 +1,51 @@
+/*Css cho header */
+
+.header{
+    background-color: var(--black-color);
+    color: var(--black-color);
+    height: 50px;
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 1px 1px 1px rgba(255,255,255,0.05);
+}
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header__navbar a{
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 50px;
+}
+.header__navbar a:hover{
+    color: var(--primary-color);
+}
+.navbar__items-list{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar__item-link{
+    padding: 0 8px;
+}
+
+.header__authentication{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.authentication-action{
+    padding : 0 8px;
+}

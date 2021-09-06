@@ -1,0 +1,186 @@
+
+
+/* This is for the body*/
+.body{
+    padding:  50px 0;
+    background-color: #f2f2f2;
+}
+.body__banner{
+   padding-top: 50%;
+   background-image:  linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0)) , url("/assets/img/cover.png") ;
+   background-size: 100%;
+   background-position: center;
+   position: relative;
+}
+
+.body__banner-title{
+    color: var(--white-color);
+}
+
+.banner__heading{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+
+}
+
+.body__banner-title{
+    font-size: 4.5rem;
+    line-height: 50px
+}
+
+.body__banner-subtitle{
+    margin: 24px 0;
+    font-size: 2.8rem;
+    font-weight: 300;
+}
+
+.body__banner .btn-custom{
+    font-size: 2rem;
+    font-weight: 500;
+    display: inline-block;
+    padding: 15px 24px;
+}
+
+
+/*Course introduce section */
+.course__display{
+    padding: 120px 0px;
+}
+.introduce__course-block{
+    text-align: center;
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 90px;
+}
+
+.introduce__content-quantity{
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    margin-right: 4px;
+}
+
+
+.course__showroom-heaeding{
+    text-align: center;
+    color: #000;
+    margin: 70px 0;
+}
+
+.showroom-heading__title{
+    margin-bottom: 12px;
+}
+
+.course__showroom-list{
+    color: #000;
+}
+
+.course__showroom-tile{
+    cursor: pointer;
+    margin-bottom: 24px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.course__tile-thumbnail{
+    padding-top: calc(100% *9/16);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+
+.course__tile-content{
+    padding: 5px 8px;
+    background-color: #fafafa;
+}
+
+.course__name{
+    color: #000;
+    line-height:30px;
+    padding: 24px 0;
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.course__description{
+    margin-bottom: 12px;
+    color: var(--gray-color);
+}
+
+.course__tile-quantity{
+    color: var(--gray-color);
+
+}
+.see-all-course__btn{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 75px;
+    padding: 5px 10px !important;
+    text-align: center;
+}
+
+.see-all-course__btn a{
+    font-size: 1.2rem;
+}
+
+
+
+/* This is advertising */
+
+
+.advertise__product{
+    background-color: var(--secondary-color);
+    height: 340px;
+    text-align: center;
+}
+
+.advertise__content{
+    position: relative;
+    top: 50%;
+    transform: translateY(-40%);
+
+}
+.advertise__content > h2{
+    font-size: 2.2rem;
+    margin-bottom: 16px;
+}
+
+.advertise__content > h5{
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 16px;
+}
+
+/* quote sight */
+.section-introduce-founder{
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.section-introduce-founder blockquote{
+    font-size: 1.5rem;
+    font-family: "Lora",serif;
+    line-height: 1.6;
+    font-style: italic;
+    margin: 24px 0;
+}
+
+.section-introduce-founder p{
+    margin: 0 0 12px 0;
+}
+
+.myself-section{
+    margin: 90px 0;
+}
+
+.learn-more-btn{
+    background-color: var(--secondary-color);
+}
+/*This is for the footer*/
