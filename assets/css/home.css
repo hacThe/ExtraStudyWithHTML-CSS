@@ -7,7 +7,7 @@
 }
 .body__banner{
    padding-top: 50%;
-   background-image:  linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0)) , url("./assets/img/cover.png") ;
+   background-image:  linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0)) , url("/assets/img/cover.png") ;
    background-size: 100%;
    background-position: center;
    position: relative;
