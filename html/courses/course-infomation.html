@@ -200,8 +200,9 @@
             </div>
             <div class="col l-4 c-12 m-12">
                 <div class="course__infomation-overview">
-                    <div class="course_overview-card">
-                        <div class="card__thumbnail" style="">
+                    <div class="course_overview-card" >
+                        <div class="card__thumbnail" style="background-image: linear-gradient( rgba(0,0,0,0.05),
+                        rgba(0,0,0,0.4)), url(../../assets/img/thumbnail1.png) ; ">
                             <div class="card__thumbnail-description">
 
                                 <i class="fas fa-play-circle"></i>
@@ -242,7 +243,7 @@
             <div class="row">
                 <div class="col l-6 footer__component">
                     <a href="/">
-                        <img src="./assets/img/logo.png" alt="" width="100%">
+                        <img src="../../assets/img/logo.png" alt="" width="100%">
                     </a>
                     <ul class="footer__description-list">
                         <li class="footer__description-tile">Đây là website lập ra để hỗ trợ giáo viên quản lý lớp học
@@ -315,14 +316,43 @@
         </div>
         <div class="modal__content">
             <h3 class="modal-name">Giới thiệu khóa học</h3>
-            <i class="fas fa-times exit-button"></i>
+            <i class="fas fa-times hide-modal__button"></i>
             <h2 class="modal-course-name">Lớp 12 nhóm 1</h2>
             <div class="aspect-ratio">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/WN7OOohsXD8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="video" width="5
+                60" height="315" src="https://www.youtube.com/embed/WN7OOohsXD8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
             </div>
         </div>
     </div>
 
+    <script>
+        var showModalElement = document.querySelector('.card__thumbnail');
+        var modal = document.querySelector('.modal');
+        var modalOverlayLayer = document.querySelector('.modal__overlay');
+        var hideModalBtn = document.querySelector('.hide-modal__button');
+        var iframeVideo = document.getElementById("video");
+        function showAndHideModal(e)
+        {
+            console.log(modal.style.display);
+            if (modal.style.display == 'block')
+            {
+                console.log(1);
+                modal.setAttribute('style', 'display: none');
+                iframeVideo.setAttribute('src', '');
+            }
+            else 
+            {
+                iframeVideo.setAttribute('src', 'https://www.youtube.com/embed/WN7OOohsXD8?autoplay=1');
+                console.log(iframeVideo);
+                modal.setAttribute('style', 'display: block');
+            }
+        }
+        showModalElement.addEventListener('click', showAndHideModal);
+        modalOverlayLayer.addEventListener('click', showAndHideModal);
+        hideModalBtn.addEventListener('click', showAndHideModal);
+
+       
+    </script>
 </body>
 
 

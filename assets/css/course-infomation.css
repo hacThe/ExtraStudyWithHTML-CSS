@@ -114,7 +114,6 @@ span{
 .card__thumbnail{
     border-radius: 5px;
     cursor: pointer;
-    background-image: linear-gradient( rgba(0,0,0,0.05), rgba(0,0,0,0.4)), url(./assets/img/thumbnail1.png) ;
     position: relative;
     padding-top: calc(100% *9/16);
     background-size: 100%;
@@ -186,6 +185,7 @@ span{
     left: 0;
     bottom: 0;
     z-index: 2;
+    display: none;
 
 }
 
@@ -224,10 +224,17 @@ span{
   }
 
 
-  .exit-button{
+  .hide-modal__button{
       position: absolute;
-      right: 28px;
-      top: 26px;
+      right: 23px;
+      top: 21px;
+      padding: 5px;
+      transition: all 0.3s;
+  }
+
+  .hide-modal__button:hover{
+      transform: translateY(-5px);
+      cursor: pointer;
   }
   
   .modal__content h3{
