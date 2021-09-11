@@ -185,6 +185,7 @@ span{
     right: 0;
     left: 0;
     bottom: 0;
+    z-index: 2;
 
 }
 
@@ -192,5 +193,49 @@ span{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal__content{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 80px;
+    transform: translateX(-50%);
+    padding: 28px;
+    background-color: #1e1e1c;
+    color: #fafafa;
+}
+
+.aspect-ratio {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* The height of the item will now be 56.25% of the width. */
+  }
+  
+  /* Adjust the iframe so it's rendered in the outer-width and outer-height of it's parent */
+.aspect-ratio iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+
+
+  .exit-button{
+      position: absolute;
+      right: 28px;
+      top: 26px;
+  }
+  
+  .modal__content h3{
+      padding: 15px 0 0 0;
+      font-size: 1.5rem;
+  }
+
+  .modal__content h2{
+    padding: 24px 0;
+    font-size: 2rem;
 }

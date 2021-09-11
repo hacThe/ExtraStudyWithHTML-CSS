@@ -14,6 +14,7 @@
     --button-image: linear-gradient(70.06deg, #2cccff -5%, #22dfbf 106%);
     --font-family: "Montserrat",Arial,Helvetica,sans-serif;
     --black-background-color: #151515;
+    --modal-size: 645px;
 }
 
 
@@ -59,3 +60,35 @@ a{
 .padding-both-side-8{
     padding: 0px 8px;
 }
+@media (max-width: 740px) {
+    .modal{
+        display: none !important;
+    }
+}
+/* >= Tablet */
+@media (min-width: 740px){
+    .modal__content{
+    width: 645px;
+    max-width: 80%;
+    }
+}
+
+/* Tablet - PC low resolution */
+@media (min-width: 1024px) {
+    
+    .modal__content{
+        width: 816px;
+        max-width: 80%;
+        }
+}
+
+/* PC medium resolution > */
+@media (min-width: 1240px) {
+    .modal__content{
+        width: 913px;
+        max-width: 80%;
+        }
+}
+
+
+
