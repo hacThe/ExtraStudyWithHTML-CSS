@@ -594,20 +594,20 @@
         console.log(chapterToogle);
         chapterToogle.forEach(showAndHideLesson);
         function isHide(){
+            var result = false;
             chapterToogle.forEach(element => {
-                if (element.getAttribute('data-before') ==='+')
-                return true;
+                if (element.getAttribute('data-before') =='+')
+               {
+                   result = true;
+                   return ;
+               }
             });
-            return false;
+            return result;
         }
 
         function showAndHideLesson(element, index) {
             element.addEventListener('click', () => {
-                if (!isHide()) {
-                seeAllLessonsBtn.textContent = 'Mở rộng tất cả'
-            } else {
-                seeAllLessonsBtn.textContent = 'Thu nhỏ tất cả';
-            }
+                
                 console.log(element.nextElementSibling, index);
                 const currentChapterLessons = element.nextElementSibling;
                 if (currentChapterLessons.style.display === 'block') {
@@ -619,6 +619,13 @@
                     currentChapterLessons.setAttribute('style', 'display: block');
                     element.setAttribute('data-before', '-');
 
+                }
+
+                console.log('ishide', isHide());
+                if (isHide()) {
+                    seeAllLessonsBtn.textContent = 'Mở rộng tất cả'
+                } else {
+                    seeAllLessonsBtn.textContent = 'Thu nhỏ tất cả';
                 }
             })
         }
