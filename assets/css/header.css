@@ -1,7 +1,7 @@
 /*Css cho header */
 
 .header{
-    background-color: var(--black-color);
+    background-color: #151515;
     color: var(--black-color);
     height: 50px;
     position:fixed;

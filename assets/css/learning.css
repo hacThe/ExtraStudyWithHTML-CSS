@@ -1,0 +1,405 @@
+.header{
+}
+
+.body{
+    padding-bottom: 10px !important;
+    overflow: hidden;
+    scrollbar-gutter: stable both-edges;
+}
+
+.header__nav{
+    
+    height: 50px;
+    background-color: #151515;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;   
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1;
+}
+
+
+.header__left-side{
+    display: inline-flex;
+    flex-direction: row;
+    line-height: 50px;
+    height: 50px;
+}
+
+.header__logo{
+    cursor: pointer;
+    line-height: 50px;
+    margin-right: 20px;
+}
+
+.header__back-button{
+    padding: 0 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.header__right-side{
+    cursor: pointer;
+    display: inline-block;
+    line-height: 50px;
+    
+}
+
+.header__course-name{
+    position: relative;
+    font-size: 1.35rem;
+    font-weight: 400;
+}
+
+.header__course-name::before{
+    content: "";
+    height: 14px;
+    border-right: 0.8px solid #686f7a;
+    position: absolute;
+    left: -18px;
+    top: 50%;
+    transform: translate(0%,-50%)
+
+}
+
+
+/*---------------------BODY---------------------*/
+.content__right-side,
+.content__left-side{
+    height: calc(100vh - 60px);
+    overflow: auto;
+}
+
+
+/*---------------------FOR SCROLLBAR------------*/
+
+
+
+.custom.aspect-ratio {
+    width: 85%;
+    height: 0;
+    padding-bottom: calc(56.25% * 0.85); /* The height of the item will now be 56.25% of the width. */
+}
+
+
+.course__iframe-video{
+    position: relative;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-btn{
+    position: absolute;
+    color: white;
+    z-index: 1;
+    height: 60px;
+    width: 30px;
+    background-color: rgb(88, 88, 88);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.nav-btn:hover{
+    cursor: pointer;
+    background-color: var(--primary-color);
+}
+
+.nav-btn.previous{
+    left: 2.5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-btn.next{
+    right: 2.5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/*-----------------------*/
+.about-lesson{
+    padding : 0 100px;
+}
+
+@media (max-width:720px){
+    .about-lesson{
+        padding : 0 16px;
+    }
+    
+}
+
+.content__navbar{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    border-bottom: 1px solid #dcdacb;
+    font-size : 1.5rem;
+    font-weight: 600;
+}
+
+.content__navbar-item
+{
+    margin-right: 12px;
+}
+
+
+.content__tab{
+    padding: 15px 0;
+}
+
+.course__overview-description{
+    font-size: 1.3rem;
+    line-height: 40px;
+}
+
+
+.course__overview-comment{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.7rem;
+}
+
+
+
+.share__block{
+    display: flex;
+    font-size: 1.55rem
+}
+
+.share__block span{
+    margin-right: 8px;
+    line-height: 20px;
+}
+.contact-icons-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.contact-icon{
+    height: 20px;
+    width: 20px;
+    background-color:#666666;
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    color: white
+}
+
+
+.contact-icon:nth-child(1){
+    background-color: #4080ff;
+    margin-right: 4px;
+}
+
+.contact-icon:nth-child(2){
+    background-color: #f47425;
+    margin-right: 4px;
+
+}
+
+.course__overview-description a{
+    display: inline-block;
+}
+
+
+.lesson__comments{
+    max-width: 630px;
+}
+
+.lesson__user-comment{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lesson__user-comment input{
+    flex: 1;
+    border: none;
+    border-bottom: 1px solid #dcdacb;
+    outline: none;
+    height: 30px;
+    font-family: var(--font-family);
+}
+.comment-info img,
+.lesson__user-comment img{
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.lesson__other-comments{
+    margin-bottom: 30px;
+}
+
+.comment-info{
+
+    display: flex;
+}
+
+.comment-content{
+    background-color: #f2f3f5;
+    padding: 8px;
+    border-radius: 18px;
+}
+
+
+.username-comment{
+    padding: 0;
+    margin :0;
+    margin-bottom: 4px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.user-comment-content{
+    line-height: 1.8;
+    font-size: 1.2rem;
+}
+
+.comment-react{
+    margin-left: 60px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.time-info{
+    color: #666;
+}
+
+.time-info,
+.reply-button{
+    margin-left: 12px;
+    position: relative;
+}
+.time-info::before,
+.reply-button::before{
+    content: ".";
+    color: #666;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    left: -9px;
+}
+
+.comment-wrapper{
+    margin-top: 30px;
+}
+
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer span{
+    color: #666;
+}
+
+.footer i{
+    color: var(--primary-color);
+}
+
+
+/*---------------------RIGHT_SIDE--------------------*/
+
+
+.learning-infomation__leftside h3{
+    font-size: 1.45rem;
+    font-weight: 600;
+    padding: 0px 0 5px 0;
+}
+
+.course__learning-infomation{
+    position: relative;
+    padding: 10px 12px;
+}
+
+.learning-infomation__rightside{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    font-size: 1.1rem;
+}
+
+strong{
+    font-weight: 700;
+}
+
+
+.course__learning-infomation::before{
+    content: "";
+    background-color: rgba(70, 230, 252, 0.35);
+    top: 0;
+    bottom: 0;
+    left: -15px;
+    right: 3%;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.course-chapter__toggle{
+    position: relative;
+    padding: 6px 12px;
+    background-color: rgb(247, 247, 247);
+    border-bottom: 1px solid rgb(225, 225, 225);
+}
+
+.expanded__icon{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    font-size: 1.4rem;
+}
+.course-chapter-lesson:hover,
+.course-chapter__toggle:hover{
+    background-color: rgb(240, 240, 240);
+    cursor: pointer;
+}
+
+.course__chapter h2{
+    font-weight: 600;
+}
+
+
+.course-chapter-lesson{
+    position: relative;
+    padding: 8px 12px 8px 36px;
+    background-color: #fff;
+    
+}
+
+.lesson__icon-state{
+    position: absolute;
+    left: 12px;
+    top: 15px;
+    font-size: 1.25rem;
+    color: rgb(0, 168, 65);
+}
+
+
+.lesson__name{
+    font-size: 1.3rem;
+}
+
+.lesson__time{
+    font-size: 1rem;
+    color: #666;
+}
+
+.lesson__time i{
+    margin-right: 4px;
+}
+
