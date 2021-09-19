@@ -39,8 +39,12 @@
 .header__back-button{
     padding: 0 10px;
     font-size: 1.5rem;
-    cursor: pointer;
 }
+.header__back-button:hover{
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
 
 .header__right-side{
     cursor: pointer;
@@ -68,7 +72,11 @@
 
 
 /*---------------------BODY---------------------*/
-.content__right-side,
+.content__right-side{
+    
+    height: calc(100vh - 60px);
+    overflow: hidden;
+}
 .content__left-side{
     height: calc(100vh - 60px);
     overflow: auto;
@@ -145,7 +153,17 @@
 
 .content__navbar-item
 {
+    display: block;
     margin-right: 12px;
+    line-height: 60px;
+    color: #666;
+    transition: all 0.25s;
+}
+
+.content__navbar-item:hover{
+    color: #000;
+    cursor: pointer;
+    font-weight: 600;
 }
 
 
@@ -313,7 +331,11 @@
 
 
 /*---------------------RIGHT_SIDE--------------------*/
-
+.course__chapter-wrapper{
+    height: calc(100vh - 60px - 57px);
+    overflow: scroll;
+    position: relative;
+}
 
 .learning-infomation__leftside h3{
     font-size: 1.45rem;
@@ -351,11 +373,15 @@ strong{
 
 
 .course-chapter__toggle{
-    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
     padding: 6px 12px;
     background-color: rgb(247, 247, 247);
     border-bottom: 1px solid rgb(225, 225, 225);
 }
+
 
 .expanded__icon{
     position: absolute;
@@ -403,3 +429,148 @@ strong{
     margin-right: 4px;
 }
 
+/*----------------NOTE TAB-------------------*/
+
+.creat-note__wrapper{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.create__note{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #aaa;
+    color: #666;
+    font-size: 1.3rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px;
+}
+
+.create__note:hover{
+    cursor: pointer;
+    border: 1px solid #666;
+}
+
+
+.note__text-area{
+
+}
+
+.note__filter{
+    margin-left: 84px;
+    margin-top: 15px;
+    
+}
+
+select{
+    padding: 3px;
+    font-family: var(--font-family);
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+option{
+    font-family: var(--font-family);
+    cursor: pointer;
+}
+
+.note__filter-position{
+    margin-right: 18px;
+}
+
+.note__list{
+    margin: 30px 0;
+
+}
+
+.note__tile-infomation{
+    display: flex;
+    align-items: center;
+    margin-bottom: 36px;
+}
+
+.note__infomation-time{
+    background-color: #007791;
+    border-radius: 24px;
+    height: 24px;
+    width: 58px;
+    text-align: center;
+    line-height: 24px;
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+
+.note__infomation-time:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.note__tile-action{
+    display: flex;
+    margin-left: auto;
+}
+
+.note__tile-action i{
+    color: #aaa;
+    font-size: 1.35rem;
+    margin-left: 12px;
+}
+.note__tile-action i:hover{
+    cursor: pointer;
+    color: #333;
+}
+
+
+.note__tile-chapter-name{
+    margin-left: 26px;
+    color: #007791;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.note__tile-lesson-name{
+    position: relative;
+    margin-left: 24px;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.note__tile-lesson-name::before{
+    content: "-";
+    position: absolute;
+    left: -13px;
+    top: -50%;
+    transform: translateY(50%);
+}
+
+.note__tile-content{
+    padding-left: 84px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+
+/*================RELEVAN TAB=============================*/
+.relevant__tab{
+    margin: 30px 0;
+    display: none;
+}
+.overview__tab,
+.note__tab{
+    display: none;
+}
+
+.actived__tab{
+    display: block;
+}
+.actived__tab-label{
+    border-bottom: 1px solid #000;
+    color: #000;
+}
