@@ -36,6 +36,10 @@
     margin-right: 20px;
 }
 
+.header__back-button i{
+    color: white;
+
+}
 .header__back-button{
     padding: 0 10px;
     font-size: 1.5rem;
@@ -567,6 +571,10 @@ option{
     display: none;
 }
 
+.content-course__tab{
+    display: none;
+}
+
 .actived__tab{
     display: block;
 }
@@ -574,3 +582,5 @@ option{
     border-bottom: 1px solid #000;
     color: #000;
 }
+
+/*================Content tab=============================*/
