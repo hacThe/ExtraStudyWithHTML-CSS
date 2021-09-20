@@ -1,0 +1,145 @@
+.app{
+    padding-top: 100vh;
+   background-image:  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0)) , url("../../assets/img/background-login2.png") ;
+   background-size: auto;
+   background-position: center;
+   position: relative;
+   background-repeat: no-repeat;
+}
+
+.intro-block h1 {
+    font-size: 2.4rem;
+    color: #333;
+    margin-bottom: 42px;
+}
+
+.intro-login-block h1 {
+    font-size: 2.4rem;
+    color: #333;
+    margin-bottom: 42px;
+}
+
+.sign-up-type-selection,
+.login-type-selection{
+    padding: 50px;
+    position: absolute;
+    background-color: white;
+    max-width: 640px;
+    height: 600px;
+    width: calc(100% - 24px);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.sign-up-type_block,
+.login-type_block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sign-up-tile,
+.login-tile{
+    border-radius: 50px;
+    border: 2px solid #dce0e3;
+    position: relative;
+    width: 320px;
+    height: 44px;
+    margin-top: 18px;
+}
+
+.sign-up-tile:hover,
+.login-tile:hover{
+    cursor: pointer;
+    background-color: #dce0e3;
+}
+
+.heading {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.title {
+    font-size: 1.3rem;
+    padding-top: 10px;
+    font-weight: 600;
+    color: #555;
+}
+
+
+.login-option,
+.register-option{
+    margin-top: 45px;
+    font-size: 1.35rem;
+}
+
+.login-option a,
+.register-option a{
+    cursor: pointer;
+    color: var(--primary-color);
+    font-weight: 600;
+    display: inline-block;
+}
+
+
+/*--------------------LOGIN FORM--------------------------*/
+
+.sign-up-account,
+.login-account{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-account input,
+.login-account input{
+    width: 320px;
+    height: 44px;
+    padding: 5px 24px;
+    border-radius: 50px;
+    outline: none;
+    border: 2px solid #dce0e3;
+    margin-bottom: 24px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.sign-up-btn,
+.login-btn{
+    background-color: var(--secondary-color);
+    color: white !important;
+    font-weight: 700 !important;
+}
+
+.sign-up-btn:hover,
+.login-btn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.back-btn-sign-up,
+.back-btn-login{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    font-size: 2.5rem;
+    color: #333;
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+.back-btn-sign-up:hover,
+.back-btn-login:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    transform: translateX(-5px);
+}
